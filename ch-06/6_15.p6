@@ -12,7 +12,7 @@ my $picks := $cp.pick: 25;
 
 for $picks.rotor: 5 -> $hand {
     my $sorted := $hand.sort: { 
-        $^a.[1] leg $^b.[1]
+        $cardStr.index($^a.[1]) <=> $cardStr.index($^b.[1])
           or
         $^a.[0] leg $^b.[0]
     };
