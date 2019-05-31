@@ -1,7 +1,7 @@
 #!/usr/bin/perl6
 my $suits = ("Hearts", "Clubs", "Spades" ,"Diamonds");
-my $cardNumbers := [ 2 .. 10];
-my $allCards = $cardNumbers.push: "J", "Q", "K", "A";
+my $cardNumbers := [ 2 .. 9];
+my $allCards = $cardNumbers.push: "T", "J", "Q", "K", "A";
 my $allCardsList = $allCards.List;
 
 my $cardStr = $allCardsList.join: '';
